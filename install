@@ -1,7 +1,0 @@
-wget -q -nv -O idena-manager https://gitlab.com/crackowich/idena-manager/-/raw/master/idena-manager
-chmod +x idena-manager
-wget -q -nv -O idena-manager-autocomplete.bash https://gitlab.com/crackowich/idena-manager/-/raw/master/idena-manager-autocomplete.bash
-./idena-manager install
-./idena-manager disable-self-update
-export PATH=$(bash idena-manager set-path)
-source $(idena-manager setup-autocomplete)
