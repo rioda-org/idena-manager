@@ -4,7 +4,7 @@
 
 ## Description
 This script is made to manage your node instances on VPS servers. Currently only Debian distributions are
-  supported. Script is tested on Ubuntu 16.04 and 18.04 only
+  supported. Script is tested on Ubuntu 16.04, 18.04 and 20.04
 
 ## Features
  - Easily install and add your node instances
