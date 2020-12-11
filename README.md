@@ -44,7 +44,7 @@ Here you'll be able to find a little bit more details about each command idena-m
   password to install some dependencies, and only in case you already don't have another node installation on this
    server.
  - Fresh installation
-   - Run `idena-manager add -l nodes -a "" -p ""
+   - Run `idena-manager add -l nodes -a "" -p ""`
  - Fresh installation with defined api key
    - Run `idena-manager add -l nodes -a "my_api_key" -p ""` - replace **my_api_key** with your
   key
