@@ -1,5 +1,6 @@
 ## Quickstart
 `source <(curl -sL https://raw.githubusercontent.com/rioda-org/idena-manager/master/install)`
+
 `idena-manager add -p "your_private_key" -a "123"`
 
 ## Update 2020-12-12
