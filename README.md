@@ -1,20 +1,20 @@
-# Update 2020-12-12
+## Quickstart
+`source <(curl -sL https://raw.githubusercontent.com/rioda-org/idena-manager/master/install)`
+`idena-manager add -p "your_private_key" -a "123"`
+
+## Update 2020-12-12
  - Cloned repo from Crackowich
  - Trying to minimize code and enable fast sync during node instalation
 
 ## Description
-This script is made to manage your node instances on VPS servers. Currently only Debian distributions are
+This script can manage your node instances on VPS servers. Currently only Debian distributions are
   supported. Script is tested on Ubuntu 16.04, 18.04 and 20.04
 
 ## Features
- - Easily install and add your node instances
- - Automatic update of all node instances on the server (only if validation is not in progress)
- - In case of node error, automatically starts node instances
- - Ability to migrate existing instances to new servers
+ - Easily add one or multiple nodes
+ - Automatic update of all nodes
+ - In case of node error, automatically restarts node
  - Disable or enable your node instances
- - Set or disable email notifications when something goes wrong with one or more instances
- - Support for multiple instances per server
- - Easily transfer your current instances onto the server
  - View all the instances you have installed and their run time and status
 
 # Instructions
@@ -60,11 +60,9 @@ idena-manager supports multiple parameters so it could automatically do everythi
   you'd like to install to the current directory where you're at, just run `idena-manager add -l ""`. If you'd like
    to install it to sub-folder called "nodes" for example, just run `idena-manager add -l nodes`. You can enter either
     relative or absolute path.
- - `idena-manager add -e email` - Set email address where you'd like to receive error emails for any of your node
-  instances. For example: `idena-manager add -e "j.snow@castle.black"`
  - `idena-manager add -a api_key` - Replace **api_key** with api key you want to use. For example: `idena-manager add
-  -a "myapikey1"`. If you want the script to generate api key for you, just send empty string there: `idena-manager
-   add -a ""`. If you don't specify this parameter, script will ask you to enter your desired api key.
+  -a "myapikey1"`. If you want the script to generate api key for you, just send empty string there: `idena-manager 
+  add -a ""`. If you don't specify this parameter, script will ask you to enter your desired api key.
  - `idena-manager add -p private_key` - Replace **private_key** with your private key (key from nodekey file) if you're transferring
   your existing node to this script/server. Example: `idena-manager add -p "privatekey"`. We do not
    recommend usage of this parameter, however script does offer it. If you don't specify this parameter, script will
